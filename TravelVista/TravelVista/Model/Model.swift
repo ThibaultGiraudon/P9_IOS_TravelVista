@@ -8,13 +8,13 @@
 import Foundation
 
 // Représente les sections pour classer les pays
-struct Region: Codable {
+struct Region: Codable, Hashable {
     var name: String
     var countries: [Country]
 }
 
 // Représente toutes les informations d'un pays
-struct Country: Codable {
+struct Country: Codable, Hashable {
     var name: String
     var capital: String
     var description: String
@@ -24,7 +24,7 @@ struct Country: Codable {
 }
 
 // Représente les coordonnées d'une capitale
-struct Coordinates: Codable {
+struct Coordinates: Codable, Hashable {
     var latitude: Double
     var longitude: Double
 }

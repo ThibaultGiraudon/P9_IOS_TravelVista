@@ -7,6 +7,7 @@
 
 import UIKit
 import MapKit
+import SwiftUI
 
 class DetailViewController: UIViewController, MKMapViewDelegate {
     @IBOutlet weak var countryNameLabel: UILabel!
@@ -24,10 +25,23 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         self.setCustomDesign()
 
         if let country = self.country {
             self.setUpData(country: country)
+            let hostingController = UIHostingController(rootView: TitleViewSwiftUI(contryName: country.name, capitalName: country.capital, rating: country.rate))
+            self.addChild(hostingController)
+            self.view.addSubview(hostingController.view)
+            hostingController.didMove(toParent: self)
+            
+            hostingController.view.translatesAutoresizingMaskIntoConstraints = false
+            hostingController.view.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
+            hostingController.view.rightAnchor.constraint(equalTo: self.view.rightAnchor).isActive = true
+            hostingController.view.topAnchor.constraint(equalTo: self.imageView.bottomAnchor).isActive = true
+            hostingController.view.heightAnchor.constraint(equalToConstant: 65).isActive = true
+            
+            self.titleView.isHidden = true
         }
     }
     

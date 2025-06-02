@@ -39,6 +39,7 @@ struct ListView: View {
                     }
                 }
             }
+            .listStyle(.plain)
         }
     }
 }

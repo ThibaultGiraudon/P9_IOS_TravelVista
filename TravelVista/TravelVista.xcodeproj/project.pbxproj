@@ -19,6 +19,7 @@
 		42B90C1F2B2A056000779364 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42B90C1D2B2A056000779364 /* LaunchScreen.storyboard */; };
 		CE647C982DEDDD5B0072D26E /* TitleViewSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE647C972DEDDD5B0072D26E /* TitleViewSwiftUI.swift */; };
 		CE647C9A2DEDE1DF0072D26E /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE647C992DEDE1DF0072D26E /* ListView.swift */; };
+		CE647C9C2DEDE5E00072D26E /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE647C9B2DEDE5E00072D26E /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		42B90C202B2A056000779364 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE647C972DEDDD5B0072D26E /* TitleViewSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewSwiftUI.swift; sourceTree = "<group>"; };
 		CE647C992DEDE1DF0072D26E /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		CE647C9B2DEDE5E00072D26E /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				424C31BF2B30A39B00279238 /* MapViewController.swift */,
 				CE647C972DEDDD5B0072D26E /* TitleViewSwiftUI.swift */,
 				CE647C992DEDE1DF0072D26E /* ListView.swift */,
+				CE647C9B2DEDE5E00072D26E /* DetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				424C31C42B30A72300279238 /* Model.swift in Sources */,
+				CE647C9C2DEDE5E00072D26E /* DetailView.swift in Sources */,
 				CE647C982DEDDD5B0072D26E /* TitleViewSwiftUI.swift in Sources */,
 				424C31C82B30A78B00279238 /* Service.swift in Sources */,
 				424C31C02B30A39B00279238 /* MapViewController.swift in Sources */,
